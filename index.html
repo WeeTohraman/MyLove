@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday ❤️</title>
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Kanit:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================
+         BACKGROUND
+    ====================================== -->
+
+    <div id="stars"></div>
+
+    <div id="sparkles"></div>
+
+    <div id="hearts"></div>
+
+
+    <!-- =====================================
+         SCENE 1 : COVER
+    ====================================== -->
+
+    <section id="cover"
+        class="scene active">
+
+        <div class="cover-glow glow-one"></div>
+        <div class="cover-glow glow-two"></div>
+
+        <div class="cover-card">
+
+            <div class="corner top-left">✦</div>
+            <div class="corner top-right">♡</div>
+
+            <div class="small-title">
+                มีบางอย่างที่อยากบอก...
+            </div>
+
+            <h1>
+                เธอเค้า
+                <br>
+                <span>มีอะไรจะบอก</span>
+            </h1>
+
+            <div class="gold-divider">
+                ♡
+            </div>
+
+            <p class="cover-description">
+                วันนี้เป็นวันพิเศษ
+                <br>
+                และเค้าอยากให้เธอเปิดมันด้วยตัวเอง
+            </p>
+
+            <button id="openBtn"
+                class="main-button">
+
+                เปิดดูสิ ❤️
+
+            </button>
+
+            <div class="hint">
+                แตะหรือคลิกเพื่อเปิดเซอร์ไพรส์
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         SCENE 2 : BIRTHDAY
+    ====================================== -->
+
+    <section id="birthday"
+        class="scene">
+
+        <div class="birthday-light"></div>
+
+        <div class="birthday-title">
+
+            <div class="tiny-title">
+                TODAY IS YOUR SPECIAL DAY
+            </div>
+
+            <h2>
+                Happy Birthday
+            </h2>
+
+            <div class="sparkle-text">
+                ✦ ✦ ✦
+            </div>
+
+        </div>
+
+
+        <!-- BALLOONS -->
+
+        <div class="balloon balloon-one">
+            <div>🎈</div>
+            <span></span>
+        </div>
+
+        <div class="balloon balloon-two">
+            <div>🎈</div>
+            <span></span>
+        </div>
+
+        <div class="balloon balloon-three">
+            <div>🎈</div>
+            <span></span>
+        </div>
+
+        <div class="balloon balloon-four">
+            <div>🎈</div>
+            <span></span>
+        </div>
+
+
+        <!-- CONFETTI -->
+
+        <div id="confetti"></div>
+
+
+        <!-- CAKE -->
+
+        <div class="cake-area">
+
+            <div class="cake">
+
+                <!-- CANDLES -->
+
+                <div class="candles">
+
+                    <div class="candle"
+                        data-candle="1">
+
+                        <div class="flame"></div>
+
+                        <div class="wick"></div>
+
+                        <div class="candle-body"></div>
+
+                    </div>
+
+
+                    <div class="candle"
+                        data-candle="2">
+
+                        <div class="flame"></div>
+
+                        <div class="wick"></div>
+
+                        <div class="candle-body"></div>
+
+                    </div>
+
+
+                    <div class="candle"
+                        data-candle="3">
+
+                        <div class="flame"></div>
+
+                        <div class="wick"></div>
+
+                        <div class="candle-body"></div>
+
+                    </div>
+
+
+                    <div class="candle"
+                        data-candle="4">
+
+                        <div class="flame"></div>
+
+                        <div class="wick"></div>
+
+                        <div class="candle-body"></div>
+
+                    </div>
+
+
+                    <div class="candle"
+                        data-candle="5">
+
+                        <div class="flame"></div>
+
+                        <div class="wick"></div>
+
+                        <div class="candle-body"></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CAKE TOP -->
+
+                <div class="cake-top">
+
+                    <div class="cream cream-one"></div>
+                    <div class="cream cream-two"></div>
+                    <div class="cream cream-three"></div>
+
+                </div>
+
+
+                <!-- CAKE BODY -->
+
+                <div class="cake-body">
+
+                    <div class="cake-decoration"></div>
+
+                    <div class="cake-text">
+                        LOVE
+                    </div>
+
+                </div>
+
+
+                <!-- CAKE PLATE -->
+
+                <div class="cake-plate"></div>
+
+            </div>
+
+        </div>
+
+
+        <!-- INSTRUCTION -->
+
+        <div id="instruction"
+            class="instruction">
+
+            <div class="hand">
+                🖐️
+            </div>
+
+            <div>
+
+                <strong>
+                    ลากเมาส์ผ่านเปลวเทียน
+                </strong>
+
+                <br>
+
+                <span>
+                    ถูบริเวณไฟเพื่อดับเทียน
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- CANDLE COUNTER -->
+
+        <div class="candle-counter">
+
+            <div>
+                ดับเทียน
+                <strong id="candleCount">
+                    0
+                </strong>
+                / 5
+            </div>
+
+            <div class="counter-bar">
+
+                <div id="counterProgress"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         SCENE 3 : LETTER
+    ====================================== -->
+
+    <section id="letter"
+        class="scene">
+
+        <div id="fireworks"></div>
+
+        <div class="letter-background"></div>
+
+
+        <div class="letter-wrapper">
+
+            <div class="paper">
+
+                <div class="paper-border"></div>
+
+                <div class="letter-heart">
+                    ♥
+                </div>
+
+                <div class="letter-date">
+                    A SPECIAL LETTER FOR YOU
+                </div>
+
+                <h2>
+                    Happy Birthday
+                </h2>
+
+                <div class="letter-line">
+                    ✦ ♥ ✦
+                </div>
+
+                <!--
+                    ====================================
+                    ข้อความถึงแฟน
+                    แก้ตรงนี้ได้เลย
+                    ====================================
+                -->
+
+                <div id="message"
+                    class="message">
+                </div>
+
+                <div id="typingCursor"
+                    class="typing-cursor">
+                    |
+                </div>
+
+
+                <div class="letter-footer">
+
+                    With all my love ❤️
+
+                </div>
+
+                <!-- ปุ่มกลับหน้าแรก -->
+
+                <button id="finishBtn"
+                    class="finish-button">
+
+                     อ่านจบแล้ว ❤️
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- FLOATING HEARTS -->
+
+        <div class="final-hearts">
+
+            <span>♥</span>
+            <span>♡</span>
+            <span>♥</span>
+            <span>♡</span>
+            <span>♥</span>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
